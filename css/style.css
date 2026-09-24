@@ -112,6 +112,11 @@ body {
     margin-top: var(--spacing-m);
   }
 }
+@media (min-width:40rem) {              /* 550px */
+  .text {
+    margin: var(--spacing-xl);
+  }
+}
 
 /* Footer */
 footer {
