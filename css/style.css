@@ -185,6 +185,11 @@ a:hover {
 .banner {
   aspect-ratio: 4096 / 1600;
 }
+.logo {
+  aspect-ratio: 5000 / 3000;
+  max-width: 90%;
+  margin: 50px auto 30px auto;
+}
 
 /* Avatar Modifiers
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
