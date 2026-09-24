@@ -14,27 +14,13 @@
   height:100vh;
     text-align:center;
 	margin:0 auto;
-	padding-top:var(--spacing-xl);
 	box-sizing:border-box;
 }
-.container-left {
-	position:relative;
-	width:100%;
-	max-width:37.5rem;
-	text-align:left;
-	margin:0 auto;
-	padding:0 1.25rem;
-	box-sizing:border-box;
-}
-.container-left p {
-	margin-bottom: 1rem;  				/* 16px space between paragraphs */
-  }
 .column {
 	width:100%;
   height:100%;
 	box-sizing:border-box;
   background-color:#ffeace;
-  border-radius: 20px 20px 0 0;
   overflow: hidden;
 }
 main {
@@ -44,7 +30,11 @@ main {
 /* For devices larger than 400px */
   @media (min-width:25rem) {            /* 400px */
     .container {
-	width:85%;
+      width:85%;
+      padding-top:var(--spacing-xl);
+    .column {
+      border-radius: 20px 20px 0 0;
+    }
 }
 }/* For devices larger than 550px */
   @media (min-width:34.375rem) {        /* 550px */
@@ -147,6 +137,9 @@ footer {
 }
 a:hover {
 	color:#083BDA;
+}
+
+.qrcode {
 }
 
 /* Buttons
