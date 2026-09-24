@@ -11,7 +11,7 @@
 	position:relative;
 	width:100%;
 	max-width:800px;
-  height:100vh;
+  min-height:100vh;
     text-align:center;
 	margin:0 auto;
 	box-sizing:border-box;
@@ -23,7 +23,6 @@
   height:100%;
 	box-sizing:border-box;
   background-color:#ffeace;
-  overflow: hidden;
 }
 main {
 	padding:var(--spacing-xl);
@@ -55,7 +54,7 @@ main {
 	color:#38240b;
 	font-family:"Open Sans",system-ui;
     font-weight:400;
-	line-height:1.6;
+	line-height:1.4;
 }
 
 /* Base Typography Settings
@@ -99,18 +98,25 @@ h1 {
 }
 body {
 	font-size:var(--scale-1);           /* 20px */
-  	line-height:1.6;
 }
-.container p {
+.container .subtitle {
 	margin:0 0 var(--spacing-xl) 0;
 	font-size:var(--scale-1);
-	line-height:1.6;
+}
+
+.text {
+	font-size: 0.9rem;
+  text-align: justify;
+  margin-top: var(--spacing-xl);
+  p + p {
+    margin-top: var(--spacing-m);
+  }
 }
 
 /* Footer */
 footer {
   font-size: 0.8rem;
-	margin:var(--spacing-m) 0;
+	margin:0 0 var(--spacing-m) 0;
 }
 
 /* Responsive adjustments */
@@ -121,7 +127,7 @@ footer {
 body {
 	font-size:var(--scale-0);
 }
-.container p {
+.container .subtitle {
 	font-size:var(--scale-0);
 }
 .avatar {
@@ -188,7 +194,7 @@ a:hover {
 .logo {
   aspect-ratio: 5000 / 3000;
   max-width: 82%;
-  margin: 50px auto 40px auto;
+  margin: 50px auto var(--spacing-xl) auto;
 }
 
 /* Avatar Modifiers
